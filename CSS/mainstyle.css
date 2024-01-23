@@ -1,0 +1,141 @@
+/* add my own fonts and colours*/
+
+body {
+	background-color: #5D4A66;
+	margin: 0;
+	
+}
+
+title {
+	text-align: center;
+	font: 1.2rem "Garamond", serif;
+	color: beige;
+}
+
+nav {
+	font: 1.2rem "Garamond", serif;
+	font-size: 16px;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+	background-color: #C1B4AE;
+	color: #000000;
+	
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+ol{
+	text-align: center;
+	list-style-type: none;
+}
+
+p {
+	top: 50px;
+	text-align: center;
+	font: 1.2rem "Garamond", serif;
+	font-size: 1rem;
+	color: beige;
+	margin: 10px auto;
+}
+
+button {
+	font: 1.2rem "Garamond", serif;
+	font-size: 1.5rem;
+	padding: 5px 10px;
+	background-color: rgb(200, 180, 216);
+	outline: invert;
+	outline-color: rgb(238, 219, 247);
+	outline-width: 5px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	border: outset;
+	border-radius: 4px;
+	border-color: #000000;
+}
+
+button:hover {
+	background-color: #5D4A66;
+	outline-color: #000000;
+	outline: auto;
+	;
+}
+
+button:disabled {
+	opacity: 0.75;
+	pointer-events: none;
+}
+
+image {
+	border: 10px solid red;
+	/*trying to create a border around the images - needs a fix*/
+}
+
+label {
+	font: 1.2rem "Garamond", serif;
+	font-size: 2rem;
+	padding-right: 20px;
+	color: beige;
+	align-items: center;
+	text-align: center;
+}
+
+html {
+	border-left: 100px transparent;
+	border-right: 100px transparent;
+}
+
+/* {
+	margin: 0;
+	border: 0;
+}
+*/
+
+#ballance {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+
+#images {
+	margin-top: 5rem;
+	display: flex;
+	gap: 0px;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+#myInformation {
+	text-align: center;
+	padding-top: 20%;
+}
+
+.container{
+	display:flex;
+	gap: 10px;
+	justify-content:center;
+  }
+  
+.box{
+	background:rgb(200, 180, 216);
+	width:100px;
+	height:50px;
+  }
+  
+.oldContainer{
+	margin:0 auto;
+	width:500px;
+  }

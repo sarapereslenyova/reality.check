@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>reality.check</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/mainstyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<nav>
+			<ul>
+				<li><h1>reality.check</h1></li>
+			  	<li><a href="contact.html">More about the creator</a></li>
+			</ul>
+		  </nav>
+	</head>
+	<body>
+	<div id="introduction">
+		<p id="slogan">Come traveler, let me help you sort out your coin!</p>
+	</div>
+		<div id="ballance">
+			<label for="userInputBallance">Input your coin: </label>
+			<input type="number" id="userInputBallance">
+			<button onclick="setBallance()">Confirm coin</button>
+
+			<p id="ballanceDisplay">No ballance entered yet 
+				<button onclick="alertSetBallance()" href="#ballance">Input Ballance</button>
+			</p>
+			<p>Your fictional ballance is: <p id="fictionalBallance"></p></p>
+		</div>
+
+		<div id="expenses">
+			<p>Current list of expenses</p>
+			<ol>
+				<li>Rent 100 €
+					<!-- To do: Change the button into an input field upon clicking-->
+					<button>Change</button>
+				</li>
+				<li>Groceries not set
+					<button>Change</button>
+				</li>
+				<li>0 €</li>
+			</ol>
+		</div>
+
+		<div id="images">
+			<div id="rent">
+				<p id="rentAmount"></p>
+				<img id="imageRent" src="/images/castle realistic.png" style="height: 200px"><br>
+				<button id="payRentButton", onclick="payRent()">Pay Rent</button>
+				<button id="cancelRentButton", onclick="cancelRent()">Cancel</button>
+			</div>
+
+			<div id="grocer">
+				<p id="grocerAmount"></p>
+				<img id="imageGrocer" src="/images/castle 1.png" style="height: 200px"><br>
+				<button id="payGrocer">Pay Groceries</button>
+				<button id="cancelGrocer">Cancel</button>
+			</div>
+		</div>
+		
+		<script src="/JS/main.js"></script>
+	</body>
+	<footer>
+		
+	</footer>
+</html>
